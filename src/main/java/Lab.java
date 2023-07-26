@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -28,8 +29,9 @@ public class Lab {
      *
      * @return a List<Integer> object.
      */
-    public List<Integer> createList(){
-        return null;
+    public List<Integer> createList(){ 
+        List<Integer> createList = new ArrayList<Integer>(); 
+        return createList;
     }
 
     /**
@@ -39,7 +41,8 @@ public class Lab {
      * @return the size of List (number of items it holds.)
      */
     public int getSize(List<Integer> list){
-        return 0;
+        int getSize = list.size();
+        return getSize;
     }
 
     /**
@@ -51,6 +54,7 @@ public class Lab {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void addToList(List<Integer> list, int value){
+        list.add(value);
     }
 
     /**
@@ -66,7 +70,8 @@ public class Lab {
      * @return the int at the location in 'list' represented by 'index'.
      */
     public int get(List<Integer> list, int index){
-        return 0;
+        int get = list.get(index);
+        return get;
     }
 
     /**
@@ -79,6 +84,7 @@ public class Lab {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void removeFromList(List<Integer> list, int position){
+        list.remove(position);
 
     }
 
@@ -92,5 +98,6 @@ public class Lab {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void updateAtPosition(List<Integer> list, int position, int value){
+        list.set(position, value);
     }
 }
